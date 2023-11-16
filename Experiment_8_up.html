@@ -1,0 +1,78 @@
+<!Changing Home page background color>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Experiment 8</title>
+        <style>
+            .button {
+                display: inline-block;
+                padding: 10px 20px;
+                margin: 5px;
+                background-color: #f1f1f1;
+                ;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px;
+                width: 120px;
+            }
+
+            .input {
+                display: inline-block;
+                padding: 10px 20px;
+                margin: 5px;
+                background-color: #f1f1f1;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px;
+                width: 50%;
+            }
+        </style>
+    </head>
+
+    <body id="body" style="text-align:center;">
+        <marquee>
+            Welcome to PICT!
+        </marquee>
+
+        <H3>Society for Computer Technology and Research's</H3>
+        <H1>PUNE INSTITUTE OF COMPUTER TECHNOLOGY</H1>
+        <H3>AFFILIATED TO SPPU | AICTE APPROVED | ISO 9001:2015 | NAAC A+ Grade</H3>
+
+        <br><br>
+        <button class="button" id="btn" onmouseover="ChangeColor()" onmouseout="changecolor1()">Hover to
+            change colour</button>
+        <br><br>
+        <input class="input" id="input" placeholder="Focus on this input field to change background colour"
+            onfocus="ChangeColor2()" onfocusout="changecolor3()">
+        <script>
+            function ChangeColor() {
+                const button = document.getElementById("btn");
+                button.style.backgroundColor = "yellow";
+            }
+            function changecolor1() {
+                const button = document.getElementById("btn");
+                button.style.backgroundColor = "white";
+            }
+            function ChangeColor2() {
+                const button = document.getElementById("input");
+                button.style.backgroundColor = "red";
+            }
+            function changecolor3() {
+                const button = document.getElementById("input");
+                button.style.backgroundColor = "white";
+            }
+
+        </script>
+    </body>
+
+    </html>
